@@ -1,0 +1,114 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #008080;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #008080;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Стили для формы */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #006666;
+}
+
+/* Стили для small текста */
+small {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1em;
+    }
+ 
+    h1 {
+        font-size: 1.8em;
+    }
+
+    ul {
+        text-align: left;
+    }
+
+    li {
+        display: block;
+        margin: 5px 0;
+    }
+}
